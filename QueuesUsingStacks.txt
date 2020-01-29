@@ -1,0 +1,12 @@
+Implementing queue using stacks:
+1. Use two stacks
+2. First move all elements from first stack to the second stack. (push into the second stack)
+3. Then after entering new elements in 1st stack, pop elements from stack 2 to stack 1.
+4. This causes stack one to act as a queue. (First in first out).
+
+Applications of stacks:
+Evaluating prefix, postfix, infix expressions.
+
+Applications of Queues:
+Handling interrupts.
+CPU scheduling.
