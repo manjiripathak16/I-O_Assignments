@@ -1,0 +1,27 @@
+1) Summarize time complexities for insertion, deletion, searching for all data structures learned till now.
+    Data Structures:
+	a) Queues: -Insertion can be done only at the back of a queue (FIFO). So time complexity is O(1). It's a constant because it is independent of the 
+		 number of nodes in the queue.
+		-Deletion from a queue can be done only at the front of the queue. So similarly the time complexity is O(1).
+		-Searching in queues is done linearly which involves traversal of the entire queue once (worst case). So the time complexity is 
+		 proportional to n i.e O(n).
+	b)Stacks: -Insertion in stacks is also independent of size of the stack. Therefore time complexity is O(1) i.e constant.
+	               -Deletion in satcks can be done only of the last entered element (LIFO). So, again, time complexity is O(1).
+	               -Searching in stacks involves traversal of the stack once. So time complexity becomes O(n).
+	c)Binary Tree: -Insertion: A nbew node is inserted omly at a leaf node. We traverse through the tree till we hit a leaf node and then add the
+		       new node as a child. So time taken for insertion depends on the height of the binary tree making the time complexity O(h)
+		       where h is the height of the tree.
+		     -Deletion time complexity is O(n) because we have to traverse through all the nodes to find the node we want to delete, making the
+		      time complexity O(n) for worst case.
+		     -Searching also involves traversing through the entire tree making the worst case time complexity dependent on the number of 
+		      nodes i.e O(n).
+2) Explain the Code to find the number of components in a graph.
+-Initialize all variables as unvisited.
+-Use a count variable to store number of components.
+-Traverse through the vertices. If a vertex has not been visited perform DFS on that node and increment count by 1.
+-DFS marks the node as visited and recursively calls the function on the next adjescent node.
+
+3) DFS: ABFCDHGIEJ
+    BFS: ABCDFGHEIJ
+
+	
