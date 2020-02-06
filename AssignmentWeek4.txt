@@ -1,0 +1,28 @@
+WEEK 4
+
+BT 1:
+Inorder: DBGEHACF
+Preorder: ABDEGHCF
+Postorder: DGHEBFCA
+Level Order: ABCDEFGH
+
+BT 2:
+Inorder: HDBEAFCG
+Preorder: ABDHECFG
+Postorder: HDEBFGCA
+Level Order: ABCDEFGH
+
+THREADED BT
+A binary tree is threaded by making all right child pointers that would normally be null point to the inorder successor of the node (if it exists), 
+and all left child pointers that would normally be null point to the inorder predecessor of the node. 
+Binary trees have a lot of wasted space: the leaf nodes each have 2 null pointers. We can use these pointers to help us in inorder traversals.
+Threaded binary tree makes the tree traversal faster since we do not need stack or recursion for traversal.
+Types of threaded binary trees:
+Single Threaded: each node is threaded towards either the in-order predecessor or successor (left orright) means all right null pointers will point to inorder successor
+OR all left null pointers will point to inorder predecessor.
+Double threaded: each node is threaded towards both the in-order predecessor and successor (left andright) means all right null pointers will point to inorder successor 
+AND all left null pointers will point to inorder predecessor.
+Disadvantages of Thread Binary Tree
+Insertion and deletion operation becomes more difficult.
+Tree traversal algorithm becomes difficult.
+Memory required to store a node increases. Each node has to store the information whether the links is normal links or threaded links.
